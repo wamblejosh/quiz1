@@ -11,8 +11,9 @@
 
 }
 
-h1, h2, h3, h4, h5, h6, .navbar {
+h1, h2, h3, h4, h5, h6, .navbar p {
   margin: 0;
+  color: red;
 }
 
 .booyah-box {
@@ -29,6 +30,45 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin: 10px;
 }
 
-.text {
+.text, .string {
+  color: red;
+}
+
+.hero2 {
+  background: image_url('hero2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+
+}
+
+.black {
+  background: black;
+  border-color: red;
+  box-shadow: 1px 1px 2px 0 #dododo;
+}
+
+.help-block {
+  color: red;
+  background-color: blue;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
+
+.break {
+  border: solid black;
+  height: 5px;
+  background: red;
+}
+
+button a {
+  color: white;
+}
+
+h2 a {
   color: red;
 }

@@ -1,9 +1,24 @@
 <div class="hero">
 	<br />
 	<br />
-	<div class="text col-10 offset-1 text-center">
+	<div class="text col-10 offset-1 text-center black">
 		<h1>Are you not ENTERTAINED?!</h1>
 		<br />
 		<h2><%= link_to "--> Gladiator <--", href="https://en.wikipedia.org/wiki/Gladiator_(2000_film)", class: "text" %></h2>
+		<h2> If you would like to share one of your favorite movies please click <%= link_to "--> HERE <--",new_movie_path %> 
+	</div>
+	<br />
+	<br />
+
+	<div class="col-10 offset-1">
+		<h1 class="text-center black">People's Favorite Movies!</h1>
+		<hr class="break" />
+
+		<% @movie.each do |movie| %>
+			<h2 class="text-center black"><%= movie.title %></h2>
+			<br />
+			<br />
+			<h3 class="text-center black"><%= movie.comment %></h3>
+		<% end %>
 	</div>
 </div>
